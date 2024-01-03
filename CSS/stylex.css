@@ -1,0 +1,12 @@
+#ui{
+    color: chartreuse;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#headerx{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(80, 60, 233);
+}

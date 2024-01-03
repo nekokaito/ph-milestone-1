@@ -1,0 +1,54 @@
+body {
+    background-color: #1A1B2C;
+    
+    margin: 10px;
+
+}
+
+h1 {
+    color:#f0f1fd;
+    font-family: Prompt;
+}
+
+p{
+    color: #f0f1fd;
+    font-family: Prompt;
+}
+
+
+header {
+    
+    background-color: blueviolet;
+    background: url('/Practice/covergojo.jpg')center/cover no-repeat fixed;
+    /* background-size: center;
+   
+    background-repeat: no-repeat;
+    background-position: fixed; */
+    
+    /* box-shadow:2px 2px 8px 10px #848acf; */
+    margin: 10px;
+    border-radius: 15px;
+    
+    height: 300px;
+}
+
+#About{
+    border: 2px solid #f0f1fd;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+}
+#text{
+    display: inline-block;
+    text-align: left;
+    padding: 5px 10px 5px 40px;
+    word-wrap: break-word;
+}
+#images{
+    float: right;
+
+}
+
+#clear{
+     clear: both;
+}
