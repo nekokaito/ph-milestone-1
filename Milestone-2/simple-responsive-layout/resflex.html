@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flex</title>
+    <style>
+        .container {
+               display:flex;
+               justify-content: space-between;
+               width: 100%;
+               height: 100vh;
+               
+        }
+        .box-left{
+             border: 1px solid tomato;
+             background-color: coral;
+             border-radius: 10px;
+             width: 35%;
+             
+             
+        }
+        .box-right {
+            border: 1px solid rgb(102, 169, 178);
+            background-color: rgb(98, 80, 255);
+             border-radius: 10px;
+             width: 60%;
+        }
+        @media screen and (max-width:576px) {
+            .container {
+               display:flex;
+               flex-direction: column;
+               width: 100%;
+               height: 100vh;
+               
+        }
+        .box-left{
+             border: 1px solid tomato;
+             background-color: coral;
+             border-radius: 10px;
+             width: 100%;
+             height: 35%;
+             
+             
+        }
+        .box-right {
+            border: 1px solid rgb(102, 169, 178);
+            background-color: rgb(98, 80, 255);
+             border-radius: 10px;
+             width: 100%;
+             height: 60%;
+        }
+        } 
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box-left">Left</div>
+        <div class="box-right">Right</div>
+    </div>
 </body>
 </html>
