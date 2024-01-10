@@ -1,0 +1,41 @@
+header, nav, .ar , .sidebar, .ad, footer {
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: 1px solid violet;
+    padding: 5px;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+.ar {
+    grid-area: ar;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+footer {
+    grid-area: footer;
+}
+.main-con {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "nav ar ar sidebar"
+    "nav ar ar ad"
+    "footer footer footer footer";
+}
+@media screen and (max-width:576px) {
+    .main-con {
+        grid-template-areas: 
+        "header"
+        "nav"
+        "ar"
+        "sidebar"
+        "ad"
+        "footer";
+    }
+}
