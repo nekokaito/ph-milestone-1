@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM JS Test</title>
+    <style>
+        .my-div {
+            display: flex;
+            justify-content: center;
+        }
+        body {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>DOM is fun</h1>
-    <button onclick="console.log('I am clicked.');">Click</button>
+    <button id="title">Click</button>
     <button onclick="Color()">Change Color</button>
+    <button id="make-green">Green</button>
+    <br>
+    <br>
+    <br>
+    <input id="input-one" type="text">
+    <br>
+    <br>
+    <input id="input-two" type="text">
+    <br>
+    <br>
+    <button id="btn-update">Update</button>
+    <div class="my-div">
+        <div>
+            <h1 id="text-one">Primary Text </h1>
+            <h1 id="text-two">Primary Text </h1>
+        </div>
+    </div>
 </body>
 <script src="event.js"></script>
 </html>
