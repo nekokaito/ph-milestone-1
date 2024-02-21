@@ -6,8 +6,8 @@ document.getElementById('send-btn').addEventListener('click', function(){
     const chatBox = document.getElementById('chat-box');
     const chatValue = chatBox.value;
     const chat = document.getElementById('chat-main');
-    const start = document.getElementById('chat-container-start');
-    const end = document.getElementById('chat-container-end');
+   //  const start = document.getElementById('chat-container-start');
+   //  const end = document.getElementById('chat-container-end');
     
      if (c%2===1) {
         let text = 'msg'+ c.toString();
@@ -38,4 +38,3 @@ document.getElementById('send-btn').addEventListener('click', function(){
      console.log(c);
  
 })
-
