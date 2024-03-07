@@ -2,6 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Task from './Task'
+
+
+
 
 function App() {
   return (
@@ -10,17 +14,14 @@ function App() {
       <Person></Person>
       <h3>Salary Monthly</h3>
       <Salary jan="5000" feb={6000} march={7510} april={10177}></Salary>
+      <Task name="Homework" time="5:00"></Task>
+      <Task name="Gaming" time="7:00"></Task>
+      <Task name="Dinner" time="10:00"></Task>
      </>
       
   )
 }
 
-function Hello() {
- return (
-         <h1>Person Information</h1>
-         
- ) 
-}
 
 function Person() {
   const his_name = 'Kaito';
@@ -41,7 +42,8 @@ function Person() {
      <p>Skill</p>
      {
       skills.map((skill) => (
-        <>
+        // Empty Fragment 
+        <> 
          <hr />
          <p>{skill}</p>
         </>
@@ -54,6 +56,7 @@ function Person() {
   )
 
 }
+// distructre 
 function Salary({jan=0,feb=0,march=0,april=0}) {
   const salaryStyle = {
     border : '2px solid green',
@@ -76,4 +79,12 @@ function Salary({jan=0,feb=0,march=0,april=0}) {
     
 }
 
+function Hello() {
+  return (
+          <h1>Person Information</h1>
+          
+  ) 
+ }
+ 
+ console.log('Kaito');
 export default App
